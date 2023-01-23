@@ -4,6 +4,9 @@ fn main() {
     print_labeled_measurement(5,'h');
     let x = five();
     println!("The value of x is: {x}");
+
+    let x = pluse_one(5);
+    println!("The value of x is: {x}");
 }
 fn another_function(x:i32){
     println!("Another funcition.");
@@ -28,4 +31,10 @@ fn print_labeled_measurement(value: i32, unit_label: char){
 // you don't name return values but must use ->
 fn five() -> i32{
     5
+}
+
+
+fn pluse_one(x: i32) -> i32 {
+    x +1
+    // x +1; the semicolon will cause an error
 }
